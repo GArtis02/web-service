@@ -1,7 +1,16 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+import creds
+import json
+import openai
+import random
+import os
+import time
 
 app = FastAPI()
+
+openai.api_key = creds.api_key
+
 
 # Model for a single message
 class Message(BaseModel):
