@@ -7,7 +7,8 @@ import time
 
 app = FastAPI()
 
-openai.api_key = creds.api_key
+# add key
+openai.api_key = 
 
 
 # Model for a single message
