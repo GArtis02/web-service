@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import creds
+import app.creds as creds
 import openai
 import random
 import time
